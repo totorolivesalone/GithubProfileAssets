@@ -1,0 +1,87 @@
+<svg fill="none" viewBox="0 0 600 600" width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Night sky background -->
+  <rect width="100%" height="100%" fill="url(#nightGradient)"/>
+  
+  <!-- Gradient for night sky -->
+  <defs>
+    <linearGradient id="nightGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F2027"/>
+      <stop offset="50%" stop-color="#203A43"/>
+      <stop offset="100%" stop-color="#2C5364"/>
+    </linearGradient>
+    
+    <!-- Star animation -->
+    <style type="text/css">
+      @keyframes twinkle {
+        0% { opacity: 0.2; }
+        50% { opacity: 1; }
+        100% { opacity: 0.2; }
+      }
+      .star {
+        animation: twinkle 2s infinite;
+      }
+      
+      /* Code editor styles */
+      .editor {
+        background: #1E1E1E;
+        border-radius: 8px;
+        padding: 16px;
+        font-family: 'Fira Code', monospace;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        width: 500px;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+      .title-bar {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+      .dot-red { background: #FF5F56; }
+      .dot-yellow { background: #FFBD2E; }
+      .dot-green { background: #27C93F; }
+      .filename {
+        color: #9CDCFE;
+        font-size: 14px;
+        margin-left: 10px;
+      }
+      .comment { 
+        color: #6A9955; 
+        font-style: italic;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        display: block;
+      }
+    </style>
+  </defs>
+  
+  <!-- Stars -->
+  <g id="stars">
+    <circle class="star" cx="50" cy="30" r="1.2" fill="white" style="animation-delay: 0.1s"/>
+    <circle class="star" cx="120" cy="80" r="0.8" fill="white" style="animation-delay: 0.5s"/>
+    <circle class="star" cx="200" cy="20" r="1.5" fill="white" style="animation-delay: 1.2s"/>
+  </g>
+  
+  <!-- Content container -->
+  <foreignObject width="100%" height="100%" x="0" y="0">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+      <div class="editor">
+        <div class="title-bar">
+          <div class="dot dot-red"></div>
+          <div class="dot dot-yellow"></div>
+          <div class="dot dot-green"></div>
+          <div class="filename">about_me.cfg</div>
+        </div>
+        <span class="comment">
+          /*I 😊 am ✅ here 👲 to learn 🧠 the art 🖼 of professional 😎 aura-maxxxxing through 🪀 code 😲😤 . I 😊 like 👩‍❤️‍👩 yeeting pixels 😶 onto 🐦 screens . My 👈👖 current 💰 dev arc includes frontend chapter 🕞 of why 😩❓ CSS is constantly gaslighting me 😢 (I 👥 missed 😢 the semicolon ) , backend chapter 🕞 of writing 🤮🤑🤑🤑 Python scripts to flex 💪 on 🔛👋 Excel nerds ("mom, 👩‍🦰 look! 🧐 I 😛 automated 🏧 my 🤩 crippling anxiety!"), DS 😆 chapter 🕞 of passing 💯 DAA 🔇 course 😂 with a lot 👑 of tears 💧💧 and DB arc of "SELECT mental_stability, money 🐙🤑🤑 FROM 🙃 universe ✨🌹🥺 WHERE ⬇️ luck> 😄 10000 " . I 😊 believe 🙏 React is too 🍡 skibidi (JSX belongs 👾 in 👍🏻 a cave with other 🏾👈 medieval 👑torture devices). 📱 My 😀 delusions include 😠😠 : I 🙋 can 🦎 fix 😤🔧🔨🛠️ it (the code), 😲😤 it's just 💁 a proto-type (yeah, 🚜 dude), 👱 I 😊 will 🍡👏 learn 🎓💭📗 how 💯 to center a div without ❌🚫 relying on 💫 code-pen inspo by 🌈😈 next ⏭️ year. 🎁😛 For 💯🏽 more ➕➕ delusional 👨🏻‍💼 rants, follow 👣 me 🥺 */
+        </span>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

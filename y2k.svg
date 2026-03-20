@@ -1,56 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="580" height="400" viewBox="0 0 580 400">
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="420" viewBox="0 0 580 420">
   <defs>
-    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#0054E3"/>
       <stop offset="100%" stop-color="#003399"/>
     </linearGradient>
   </defs>
 
-  <!-- Window shadow -->
-  <rect x="8" y="8" width="564" height="384" fill="#808080"/>
-  <rect x="10" y="10" width="560" height="380" fill="#C0C0C0"/>
-  <!-- Main background -->
-  <rect x="12" y="12" width="556" height="376" fill="#ECE9D8"/>
-  
+  <!-- Outer shadow & border -->
+  <rect x="8" y="8" width="564" height="404" fill="#808080"/>
+  <rect x="10" y="10" width="560" height="400" fill="#C0C0C0"/>
+  <rect x="12" y="12" width="556" height="396" fill="#ECE9D8"/>
+
   <!-- Title bar -->
-  <rect x="12" y="12" width="556" height="28" fill="url(#titleGradient)"/>
-  <text x="20" y="32" font-family="MS Sans Serif, Segoe UI, Tahoma, sans-serif" font-weight="bold" font-size="12" fill="white">🌸 Pink Tech Stack (Retro Paint Edition) 🌸</text>
+  <rect x="12" y="12" width="556" height="28" fill="url(#titleGrad)"/>
+  <text x="22" y="32" font-family="'MS Sans Serif','Segoe UI',sans-serif" font-weight="bold" font-size="12" fill="#FFFFFF">🌸 Pink Tech Stack (Retro Paint Edition) 🌸</text>
+
   <!-- Window buttons -->
-  <rect x="540" y="18" width="16" height="16" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
-  <line x1="543" y1="21" x2="553" y2="31" stroke="black" stroke-width="1"/>
-  <line x1="553" y1="21" x2="543" y2="31" stroke="black" stroke-width="1"/>
-  <rect x="558" y="18" width="16" height="16" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
-  <text x="564" y="31" font-family="MS Sans Serif, monospace" font-size="12" fill="black">✕</text>
-  
-  <!-- Content area -->
+  <rect x="540" y="18" width="16" height="16" fill="#C0C0C0" stroke="#000000" stroke-width="0.5"/>
+  <line x1="543" y1="21" x2="553" y2="31" stroke="#000000" stroke-width="1"/>
+  <line x1="553" y1="21" x2="543" y2="31" stroke="#000000" stroke-width="1"/>
+  <rect x="558" y="18" width="16" height="16" fill="#C0C0C0" stroke="#000000" stroke-width="0.5"/>
+  <text x="564" y="31" font-family="'MS Sans Serif',monospace" font-size="12" fill="#000000">✕</text>
+
+  <!-- Content area (light beige) -->
   <rect x="20" y="48" width="540" height="296" fill="#FFFFF0" stroke="#808080" stroke-width="1"/>
-  
+
   <!-- Languages -->
-  <text x="35" y="78" font-family="MS Sans Serif, Tahoma, sans-serif" font-weight="bold" font-size="13" fill="black">💾 LANGUAGES</text>
-  <text x="50" y="104" font-family="Courier New, monospace" font-size="12" fill="black">› JavaScript</text>
-  <text x="50" y="122" font-family="Courier New, monospace" font-size="12" fill="black">› Python</text>
-  <text x="50" y="140" font-family="Courier New, monospace" font-size="12" fill="black">› TypeScript</text>
-  <text x="50" y="158" font-family="Courier New, monospace" font-size="12" fill="black">› HTML/CSS</text>
-  
+  <text x="35" y="78" font-family="'MS Sans Serif','Tahoma',sans-serif" font-weight="bold" font-size="13" fill="#B13E6F">💾 LANGUAGES</text>
+  <text x="50" y="104" font-family="'Courier New',monospace" font-size="12" fill="#2c2c2c">🌸 JavaScript</text>
+  <text x="50" y="122" font-family="'Courier New',monospace" font-size="12" fill="#2c2c2c">🌸 Python</text>
+  <text x="50" y="140" font-family="'Courier New',monospace" font-size="12" fill="#2c2c2c">🌸 TypeScript</text>
+  <text x="50" y="158" font-family="'Courier New',monospace" font-size="12" fill="#2c2c2c">🌸 HTML/CSS</text>
+
   <!-- Frameworks -->
-  <text x="35" y="188" font-family="MS Sans Serif, Tahoma, sans-serif" font-weight="bold" font-size="13" fill="black">⚙️ FRAMEWORKS</text>
-  <text x="50" y="214" font-family="Courier New, monospace" font-size="12" fill="black">› React & Next.js</text>
-  <text x="50" y="232" font-family="Courier New, monospace" font-size="12" fill="black">› Vue / Nuxt</text>
-  <text x="50" y="250" font-family="Courier New, monospace" font-size="12" fill="black">› Tailwind CSS</text>
-  <text x="50" y="268" font-family="Courier New, monospace" font-size="12" fill="black">› Express / FastAPI</text>
-  
+  <text x="35" y="188" font-family="'MS Sans Serif','Tahoma',sans-serif" font-weight="bold" font-size="13" fill="#B13E6F">⚙️ FRAMEWORKS</text>
+  <text x="50" y="214" font-family="'Courier New',monospace" font-size="12" fill="#2c2c2c">🌸 React & Next.js</text>
+  <text x="50" y="232" font-family="'Courier New',monospace" font-size="12" fill="#2c2c2c">🌸 Vue / Nuxt</text>
+  <text x="50" y="250" font-family="'Courier New',monospace" font-size="12" fill="#2c2c2c">🌸 Tailwind CSS</text>
+  <text x="50" y="268" font-family="'Courier New',monospace" font-size="12" fill="#2c2c2c">🌸 Express / FastAPI</text>
+
   <!-- Little message -->
-  <text x="35" y="298" font-family="MS Sans Serif, Tahoma, sans-serif" font-weight="bold" font-size="13" fill="black">💌 LITTLE MESSAGE</text>
-  <text x="50" y="322" font-family="Comic Sans MS, Chalkboard SE, cursive" font-size="12" fill="#B02B5E">✨ retro pixel vibes, still girly at heart ✨</text>
-  <text x="50" y="340" font-family="Comic Sans MS, Chalkboard SE, cursive" font-size="11" fill="#D96C9E">💖 click OK to continue coding 💖</text>
-  
-  <!-- Status bar with OK button integrated -->
+  <text x="35" y="298" font-family="'MS Sans Serif','Tahoma',sans-serif" font-weight="bold" font-size="13" fill="#B13E6F">💌 LITTLE MESSAGE</text>
+  <text x="50" y="322" font-family="'Comic Sans MS','Chalkboard SE',cursive" font-size="12" fill="#B02B5E">✨ retro pixel vibes, still girly at heart ✨</text>
+  <text x="50" y="340" font-family="'Comic Sans MS','Chalkboard SE',cursive" font-size="11" fill="#D96C9E">💖 click OK to continue coding 💖</text>
+
+  <!-- Status bar -->
   <rect x="12" y="352" width="556" height="24" fill="#C0C0C0" stroke="#808080" stroke-width="0.5"/>
-  <text x="20" y="369" font-family="MS Sans Serif, sans-serif" font-size="10" fill="black">📟 Paint.exe | Ready | y2k.exe loaded</text>
-  <rect x="470" y="356" width="70" height="18" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
-  <line x1="471" y1="357" x2="539" y2="357" stroke="white" stroke-width="1"/>
-  <line x1="471" y1="357" x2="471" y2="373" stroke="white" stroke-width="1"/>
+  <text x="20" y="369" font-family="'MS Sans Serif',sans-serif" font-size="10" fill="#000000">📟 Paint.exe | Ready | y2k.exe loaded</text>
+  <text x="535" y="369" font-family="monospace" font-size="12" fill="#000000">💗</text>
+
+  <!-- OK button with 3D effect -->
+  <rect x="470" y="356" width="70" height="18" fill="#C0C0C0" stroke="#000000" stroke-width="0.5"/>
+  <line x1="471" y1="357" x2="539" y2="357" stroke="#FFFFFF" stroke-width="1"/>
+  <line x1="471" y1="357" x2="471" y2="373" stroke="#FFFFFF" stroke-width="1"/>
   <line x1="540" y1="358" x2="540" y2="374" stroke="#808080" stroke-width="1"/>
   <line x1="471" y1="374" x2="540" y2="374" stroke="#808080" stroke-width="1"/>
-  <text x="496" y="370" font-family="MS Sans Serif, sans-serif" font-weight="bold" font-size="11" fill="black">OK</text>
+  <text x="496" y="370" font-family="'MS Sans Serif',sans-serif" font-weight="bold" font-size="11" fill="#000000">OK</text>
 </svg>

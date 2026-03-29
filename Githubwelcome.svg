@@ -1,0 +1,220 @@
+<svg fill="none" viewBox="0 0 600 600" width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Light Blue Desktop Background -->
+  <rect width="100%" height="100%" fill="#B0E2FF"/>
+
+  <defs>
+    <style type="text/css">
+      .window {
+        background: #FFCCCC;
+        border: 2px solid #FF99AA;
+        font-family: 'Courier New', monospace;
+        width: 520px;
+        box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+      }
+      .title-bar {
+        background: #000080;
+        padding: 4px 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        font-weight: bold;
+      }
+      .title-bar-controls button {
+        background: #FFCCCC;
+        border: 1px outset #FFE4E1;
+        width: 16px;
+        height: 14px;
+        font-size: 10px;
+        cursor: pointer;
+      }
+      .menu-bar {
+        background: #FFCCCC;
+        border-bottom: 1px solid #CC9999;
+        padding: 2px 6px;
+        display: flex;
+        gap: 12px;
+        font-size: 12px;
+      }
+      .canvas-area {
+        background: #B0E2FF;
+        border: 2px inset #808080;
+        margin: 8px;
+        padding: 8px;
+        height: 380px;
+        font-family: 'Courier New', 'Press Start 2P', monospace;
+        font-size: 14px;
+        position: relative;
+        overflow: hidden;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+      }
+      /* Cloud base styles - wider */
+      .cloud {
+        position: absolute;
+        background: white;
+        border-radius: 1000px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+        opacity: 0.8;
+        pointer-events: none;
+        z-index: 0;
+      }
+      /* Cloud 1 - wide */
+      .cloud1 {
+        width: 160px;
+        height: 70px;
+        top: 30px;
+        left: -180px;
+        animation: drift 22s linear infinite;
+      }
+      .cloud1::before, .cloud1::after {
+        content: "";
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+      }
+      .cloud1::before {
+        width: 70px;
+        height: 70px;
+        top: -35px;
+        left: 15px;
+      }
+      .cloud1::after {
+        width: 90px;
+        height: 90px;
+        top: -45px;
+        left: 55px;
+      }
+      /* Cloud 2 - extra wide */
+      .cloud2 {
+        width: 200px;
+        height: 80px;
+        top: 140px;
+        left: -220px;
+        animation: drift 28s linear infinite 6s;
+      }
+      .cloud2::before, .cloud2::after {
+        content: "";
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+      }
+      .cloud2::before {
+        width: 85px;
+        height: 85px;
+        top: -40px;
+        left: 20px;
+      }
+      .cloud2::after {
+        width: 110px;
+        height: 110px;
+        top: -55px;
+        left: 70px;
+      }
+      /* Cloud 3 - wide */
+      .cloud3 {
+        width: 140px;
+        height: 65px;
+        top: 260px;
+        left: -160px;
+        animation: drift 20s linear infinite 12s;
+      }
+      .cloud3::before, .cloud3::after {
+        content: "";
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+      }
+      .cloud3::before {
+        width: 65px;
+        height: 65px;
+        top: -32px;
+        left: 12px;
+      }
+      .cloud3::after {
+        width: 80px;
+        height: 80px;
+        top: -40px;
+        left: 50px;
+      }
+      @keyframes drift {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(750px); }
+      }
+      /* Text container above clouds */
+      .canvas-text {
+        position: relative;
+        z-index: 1;
+      }
+      .canvas-line {
+        text-shadow: 1px 1px 0px rgba(255,255,255,0.8);
+        letter-spacing: 0.5px;
+      }
+      .prompt { color: #D81B60; font-weight: bold; }
+      .divider { color: #F06292; }
+      .section { color: #AD1457; font-weight: bold; }
+      .data { color: #6A1B9A; }
+      .message { color: #C2185B; font-style: italic; }
+      .ready {
+        color: #880E4F;
+        font-weight: bold;
+        animation: blink 1.2s step-end infinite;
+      }
+      @keyframes blink {
+        0%, 50% { opacity: 1; }
+        51%, 100% { opacity: 0; }
+      }
+      hr { margin: 10px 0; border: 1px solid #F48FB1; }
+      .status-bar {
+        background: #FFCCCC;
+        border-top: 1px solid #FFE4E1;
+        padding: 2px 6px;
+        font-size: 11px;
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </defs>
+
+  <foreignObject width="100%" height="100%" x="0" y="0">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+      <div class="window">
+        <div class="title-bar">
+          <span>about_me.cfg - MS Paint</span>
+          <div class="title-bar-controls">
+            <button>_</button>
+            <button>□</button>
+            <button>✕</button>
+          </div>
+        </div>
+        <div class="menu-bar">
+          <span>File</span><span>Edit</span><span>View</span><span>Image</span><span>Options</span><span>Help</span>
+        </div>
+        <div class="canvas-area">
+          <!-- Drifting clouds (wide) -->
+          <div class="cloud cloud1"></div>
+          <div class="cloud cloud2"></div>
+          <div class="cloud cloud3"></div>
+          
+          <div class="canvas-text">
+            <div class="canvas-line prompt">&gt; C:\about_me.cfg</div>
+            <div class="canvas-line divider">--------------------------------</div>
+            <div class="canvas-line section">[ System Status ]</div>
+            <div class="canvas-line data">User: totorolivesalone</div>
+            <div class="canvas-line data">Interface: Github</div>
+            <div class="canvas-line data">What I like: C++, Matplotlib, pandas , Pinterest , shounen, Manga</div>
+            <div class="canvas-line data">What I dislike: React , Olives, Physics </div>
+            <div class="canvas-line message">Message: Thank you so much for visiting my Github page!</div>
+            <hr/>
+            <div class="canvas-line ready">Ready</div>
+          </div>
+        </div>
+        <div class="status-bar">
+          <span>For Help, click Help Topics on the Help Menu.</span>
+          <span>NUM</span>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
